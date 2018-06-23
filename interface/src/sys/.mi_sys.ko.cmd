@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/sys/mi_sys.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/sys/mi_sys.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/sys/mi_sys.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/sys/mi_sys.mod.o

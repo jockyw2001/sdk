@@ -1,0 +1,87 @@
+#ifndef __CA_PRIVATE__
+#define __CA_PRIVATE__
+
+#include "utopia_dapi.h"
+
+typedef enum {
+    E_CA_RESOURCE,
+} eCAResourceId;
+
+
+typedef struct _CA_RESOURCE_PRIVATE
+{
+
+} CA_RESOURCE_PRIVATE;
+
+typedef struct _CA_INSTANT_PRIVATE
+{
+
+} CA_INSTANT_PRIVATE;
+
+#ifdef CONFIG_UTOPIA_PROC_DBG_SUPPORT
+typedef enum
+{
+    CA_MDBCMDLINE_NONE,
+    CA_MDBCMDLINE_HELP,
+    CA_MDBCMDLINE_OTP,
+    CA_MDBCMDLINE_BGC,
+    CA_MDBCMDLINE_MBX,
+}EN_CA_MDBCMDLINE;
+
+typedef struct DLL_PACKED
+{
+    MS_U32 DBG_CA_OTP_HASH0;
+    MS_U32 DBG_CA_OTP_HASH1;
+    MS_U32 DBG_CA_OTP_HASH2;
+    MS_U32 DBG_CA_OTP_MSID;
+    MS_U8 DBG_CA_OTP_DeviceID[32];
+    MS_U32 DBG_CA_OTP_SecureBoot;
+    CA_DEBUG_PORT_MODE DBG_CA_OTP_I2C_MODE;
+    CA_DEBUG_PORT_MODE DBG_CA_OTP_EJTAG_MODE;
+    CA_DEBUG_PORT_MODE DBG_CA_OTP_SCAN_MODE;
+}DrvCA_MDB_OTP, *PDrvCA_MDB_OTP;
+
+typedef struct DLL_PACKED
+{
+    MS_U32 DBG_CA_BGC_SECTION_MAX;
+    MS_U32 DBG_CA_BGC_RANGE;
+}DrvCA_MDB_BGC, *PDrvCA_MDB_BGC;
+
+typedef struct DLL_PACKED
+{
+    MS_U32 DBG_CA_MBX_INFO[32];
+}DrvCA_MDB_MBX, *PDrvCA_MDB_MBX;
+
+MS_BOOL MDrv_CA_MdbCmdLine(MDBCMD_CMDLINE_PARAMETER *paraCmdLine, EN_CA_MDBCMDLINE eMdbCmdLine);
+
+#endif
+
+MS_BOOL _MDrv_CA_Init(void);
+MS_BOOL _MDrv_CA_OTP_EnableSecureBoot(void);
+MS_BOOL _MDrv_CA_OTP_IsSecureBootEnabled(void);
+MS_BOOL _MDrv_CA_OTP_SetBlockLock(MS_U32 u32Start, MS_U32 u32End, CA_LOCK_TYPE eLockType);
+MS_BOOL _MDrv_CA_OTP_GetBlockLock(MS_U32 *pu32Start, MS_U32 *pu32End, CA_LOCK_TYPE *peLockType);
+MS_BOOL _MDrv_CA_OTP_IsBlank(MS_U32 addr);
+MS_U32 _MDrv_CA_OTP_Read(MS_U32 addr);
+MS_BOOL _MDrv_CA_OTP_Write(MS_U32 addr, MS_U32 value);
+MS_BOOL _MDrv_CA_Locked(CA_OTP_LOCK eLock);
+MS_BOOL _MDrv_CA_OTP_Lock(CA_OTP_LOCK eLock);
+MS_BOOL _MDrv_CA_OTP_SetRSAextID(MS_U32 u32Value);
+MS_U32 _MDrv_CA_OTP_GetRSAextID(void);
+MS_BOOL _MDrv_CA_OTP_SetHASH1_REF_VER(MS_U32 u32HASH1_REF_VER);
+MS_BOOL _MDrv_CA_OTP_GetHASH1_REF_VER(MS_U32 *pu32HASH1_REF_VER);
+MS_BOOL _MDrv_CA_OTP_SetHASH_REF_VER(MS_U32 u32HASH0_REF_VER, MS_U32 u32HASH2_REF_VER);
+MS_BOOL _MDrv_CA_OTP_GetHASH_REF_VER(MS_U32 *pu32HASH0_REF_VER, MS_U32 *pu32HASH2_REF_VER);
+MS_BOOL _MDrv_CA_OTP_SetDebugPortMode(CA_DEBUG_PORT eDebugPort, CA_DEBUG_PORT_MODE eMode);
+MS_BOOL _MDrv_CA_OTP_GetDebugPortMode(CA_DEBUG_PORT eDebugPort, CA_DEBUG_PORT_MODE *eMode);
+MS_BOOL _MDrv_CA_OTP_SetDeviceId(const MS_U8 *pu8Did, MS_U32 u32Size);
+MS_BOOL _MDrv_CA_OTP_GetDeviceId(MS_U8 *pu8Did, MS_U32 u32Size);
+MS_U32 _MDrv_CA_MaxDeviceIdSize(void);
+MS_BOOL _MDrv_CA_OTP_EnableSecureCWMode(void);
+MS_BOOL _MDrv_CA_OTP_IsSecureCWMode(void);
+MS_U32 _MDrv_CA_Random(void);
+MS_U32 _MDrv_CA_OTP_ReadCAVendor(void);
+MS_BOOL _MDrv_CA_OTP_SetFunctionConfig(CA_OTP_FUNCATION eFunction, CA_OTP_CONFIG_TYPE eActive);
+MS_BOOL _MDrv_CA_OTP_GetFunctionConfig(CA_OTP_FUNCATION eFunction, CA_OTP_CONFIG_TYPE *peActive, MS_BOOL *pbDefault);
+
+#endif // __CA_PRIVATE__

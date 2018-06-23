@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/common/mi_common.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/common/mi_common.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/common/device.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/common/../../../impl/common/mi_os_linux.o 

@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/mhal.ko := arm-none-linux-gnueabi-ld -EL -r  -T /home/wenshuai.xi/SI/i2_alkaid/project/kbuild/3.10.40/scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/mhal.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/mhal.o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/mhal.mod.o

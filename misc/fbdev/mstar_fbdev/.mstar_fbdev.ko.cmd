@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/misc/fbdev/mstar_fbdev/mstar_fbdev.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/misc/fbdev/mstar_fbdev/mstar_fbdev.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/misc/fbdev/mstar_fbdev/mstar_fbdev.o /home/wenshuai.xi/SI/i2_alkaid/sdk/misc/fbdev/mstar_fbdev/mstar_fbdev.mod.o

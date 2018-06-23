@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/warp/mi_warp.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/warp/mi_warp.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/warp/mi_warp.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/warp/mi_warp.mod.o

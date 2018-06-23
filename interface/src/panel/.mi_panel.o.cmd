@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/panel/mi_panel.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/panel/mi_panel.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/panel/panel_ioctl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/panel/../../../impl/panel/mi_panel_impl.o 

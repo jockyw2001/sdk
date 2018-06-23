@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/mhal.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/mhal.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/mhal.o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/mhal.mod.o

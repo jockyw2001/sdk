@@ -1,0 +1,23 @@
+config DRV_SC
+
+tristate "SC"
+default n
+
+---help---
+Enable compilation option for driver SC
+
+if [ DRV_SC = "y" ]
+config SC_UTOPIA_20_ENABLE
+        bool "Enable SC 20"
+        default n
+        help
+          Select if you want to enable SC Utopia 2_0. If unsure, say 'Y'.
+endif
+
+if [ DRV_SC = "m" ]
+config SC_UTOPIA_20_ENABLE
+        bool "Enable SC 20"
+        default y
+        help
+          Select if you want to enable SC Utopia 2_0. If unsure, say 'Y'.
+endif

@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vpe/mi_vpe.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vpe/mi_vpe.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vpe/mi_vpe.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vpe/mi_vpe.mod.o

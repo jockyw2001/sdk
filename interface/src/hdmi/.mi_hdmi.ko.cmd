@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/hdmi/mi_hdmi.ko := arm-linux-gnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/hdmi/mi_hdmi.ko /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/hdmi/mi_hdmi.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/hdmi/mi_hdmi.mod.o

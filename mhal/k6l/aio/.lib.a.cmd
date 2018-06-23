@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/aio/lib.a := rm -f /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/aio/lib.a; arm-buildroot-linux-uclibcgnueabi-ar rcsD /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/aio/lib.a /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/aio/src/mhal_audio.o

@@ -1,0 +1,12 @@
+config DRV_SYS
+
+tristate "SYS"
+default n
+
+config OPTEE_2_4
+bool "SYS TEEC API use OPTEE Interface 2.4.0, if not define use 1.0.1"
+default n
+
+---help---
+Enable compilation option for driver SYS
+

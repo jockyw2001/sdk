@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/simulation/rgn/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/simulation/rgn/lib.a; arm-none-linux-gnueabi-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/simulation/rgn/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/simulation/rgn/src/mhal_rgn.o

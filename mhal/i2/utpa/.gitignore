@@ -1,0 +1,11 @@
+*.o
+*.cmd
+*.o.cmd
+mxlib/
+!mxlib/include/*
+!mxlib/hal/*
+build
+project
+tmplib
+version
+tools

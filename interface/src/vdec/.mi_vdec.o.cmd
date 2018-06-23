@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vdec/mi_vdec.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vdec/mi_vdec.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vdec/vdec_ioctl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vdec/../../../impl/vdec/mi_vdec_impl.o 

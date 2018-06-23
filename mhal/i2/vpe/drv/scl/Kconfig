@@ -1,0 +1,28 @@
+config MS_SCL
+	tristate "SCL driver"
+	help
+	To enable MSTAR SCL driver.
+
+config MS_SCL_INFINITY
+  tristate "support I1 driver"
+	depends on MS_SCL
+	depends on ARCH_INFINITY
+
+config MS_SCL_INFINITY2
+  tristate "support I2 driver"
+	depends on MS_SCL
+	depends on ARCH_INFINITY2
+
+config MS_SCL_USBCAM
+  tristate "support usbcam"
+	depends on MS_SCL
+
+config MS_SCL_INFINITY3
+  tristate "support I3 driver"
+	depends on MS_SCL
+	depends on ARCH_INFINITY3
+
+config MS_SCL_CLEVELAND
+  bool "support C4P driver"
+	depends on MS_SCL
+	depends on ARCH_CLEVELAND

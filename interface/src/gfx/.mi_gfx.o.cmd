@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/gfx/mi_gfx.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/gfx/mi_gfx.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/gfx/gfx_api.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/gfx/gfx_ioctl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/gfx/../../../impl/gfx/mi_gfx_impl.o 

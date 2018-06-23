@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/built-in.o :=  rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/built-in.o; arm-none-linux-gnueabi-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/built-in.o

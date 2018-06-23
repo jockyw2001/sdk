@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/ai/mi_ai.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/ai/mi_ai.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/ai/ai_api.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/ai/ai_ioctl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/ai/../../../impl/ai/mi_ai_impl.o 

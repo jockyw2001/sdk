@@ -1,0 +1,9 @@
+config MS_GOP
+	tristate "GOP driver"
+	default n
+	help
+
+config MS_GOP_INFINITY2
+    tristate "GOP driver support for iNfinity2"
+    depends on MS_GOP
+    depends on ARCH_INFINITY2

@@ -1,0 +1,13 @@
+config API_AUDIO
+
+tristate "AUDIO"
+default n
+
+---help---
+Enable compilation option for API AUDIO
+
+config AUDIO_UTOPIA_20_ENABLE
+        bool "Enable AUDIO 20"
+        default y
+        help
+          Select if you want to enable AUDIO Utopia 2_0. If unsure, say 'Y'.

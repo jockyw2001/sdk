@@ -1,0 +1,30 @@
+CCONFIG:=$(word $(shell echo $$(($(words $(MAKEFILE_LIST))-2))), $(MAKEFILE_LIST))
+MODULE_NAME := $(firstword $(patsubst %/config.mk,%,$(CCONFIG)))
+MHAL_MODULES+=$(notdir $(MODULE_NAME))
+HM_LIST += $(MODULE_NAME)
+$(MODULE_NAME)_MACROS:= $(call fetch-value,MACROS)
+$(MODULE_NAME)_DEPS:= $(call fetch-value,DEPS)
+$(MODULE_NAME)_STYLE:= $(MODULE_NAME)_$(CONFIG_STYLE)
+$(MODULE_NAME)_COMPILE_NAME := $(COMPILE_NAME)
+ifeq ($(CONFIG_STYLE),simple)
+$(MODULE_NAME)_SRCS := $(foreach n,$(call fetch-value,SRCS),src/$(n))
+$(MODULE_NAME)_INCS := $(CURDIR)/$(MODULE_NAME)/inc $(CURDIR)/include/$(notdir $(MODULE_NAME))
+$(MODULE_NAME)_DRV_PUB_PATH := $(CURDIR)/$(MODULE_NAME)/pub
+$(MODULE_NAME)_RELEASE_INC :=
+else ifeq ($(CONFIG_STYLE),hal-style)
+$(MODULE_NAME)_HAL_SRCS := $(foreach n,$(call fetch-value,HAL_SRCS),src/$(n))
+$(MODULE_NAME)_HAL_INCS := $(foreach n,inc pub,$(CURDIR)/$(MODULE_NAME)/hal/$(n))
+$(MODULE_NAME)_DRV_SRCS := $(foreach n,$(call fetch-value,DRV_SRCS),src/$(n))
+$(MODULE_NAME)_DRV_INCS := $(CURDIR)/$(MODULE_NAME)/hal/pub $(foreach n,inc pub,$(CURDIR)/$(MODULE_NAME)/drv/$(n))
+$(MODULE_NAME)_DRV_PUB_PATH := $(CURDIR)/$(MODULE_NAME)/drv/pub
+$(MODULE_NAME)_RELEASE_INC := $(foreach n,$(call fetch-value,DRV_PUB_INCS),$(CURDIR)/$(MODULE_NAME)/drv/pub/$(n))
+else ifeq ($(CONFIG_STYLE),raw-style)
+$(MODULE_NAME)_HAL_SRCS := $(call fetch-value,HAL_SRCS)
+$(MODULE_NAME)_HAL_INCS := $(foreach n,$(call fetch-value,HAL_INC_PATH HAL_PUB_PATH),$(CURDIR)/$(MODULE_NAME)/hal/$(n))
+$(MODULE_NAME)_DRV_SRCS := $(call fetch-value,DRV_SRCS)
+$(MODULE_NAME)_DRV_INCS := $(foreach n,$(call fetch-value,HAL_PUB_PATH),$(CURDIR)/$(MODULE_NAME)/hal/$(n)) $(foreach n,$(call fetch-value,DRV_INC_PATH) $(DRV_PUB_PATH),$(CURDIR)/$(MODULE_NAME)/drv/$(n))
+$(MODULE_NAME)_DRV_PUB_PATH := $(CURDIR)/$(MODULE_NAME)/drv/$(DRV_PUB_PATH)
+$(MODULE_NAME)_RELEASE_INC := $(foreach n,$(call fetch-value,DRV_PUB_INCS),$(CURDIR)/$(MODULE_NAME)/drv/$(n))
+else
+$(error please include clear-config.mk or hal-impl-config.mk or raw-impl-config.mk)
+endif

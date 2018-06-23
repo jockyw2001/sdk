@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/mhal.ko := arm-buildroot-linux-uclibcgnueabi-ld -EL -r  -T /home/wenshuai.xi/SI/alkaid/project/kbuild/3.10.40/scripts/module-common.lds --build-id  -o /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/mhal.ko /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/mhal.o /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/mhal.mod.o

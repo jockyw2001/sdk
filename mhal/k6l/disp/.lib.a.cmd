@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/disp/lib.a := rm -f /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/disp/lib.a; arm-buildroot-linux-uclibcgnueabi-ar rcsD /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/disp/lib.a /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/disp/src/mhal_disp.o /home/wenshuai.xi/SI/alkaid/sdk/mhal/k6l/disp/src/mhal_pql.o

@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/aio/drv/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/aio/drv/lib.a; arm-linux-gnueabihf-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/aio/drv/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/aio/drv/src/common/mhal_audio.o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/aio/drv/src/linux/drv_audio.o

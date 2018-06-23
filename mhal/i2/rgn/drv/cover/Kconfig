@@ -1,0 +1,9 @@
+config MS_COVER
+	tristate "COVER driver"
+	default n
+	help
+
+config MS_COVER_INFINITY2
+    tristate "Cover driver support for iNfinity2"
+    depends on MS_COVER
+    depends on ARCH_INFINITY2

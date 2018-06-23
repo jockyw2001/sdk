@@ -1,0 +1,1 @@
+LIBS += -lmi_venc

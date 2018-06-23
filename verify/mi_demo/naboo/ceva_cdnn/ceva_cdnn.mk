@@ -1,0 +1,12 @@
+//INC  += $(PROJ_ROOT)/kbuild/$(KERNEL_VERSION)/drivers/mstar/include
+INC  += ./internal/ceva_cdnn/cdnn
+INC  += ./internal/ceva_cdnn/cdnn/install_generic/include
+INC  += ./internal/ceva_cdnn/cdnn/install_xm6/Include/amf_client
+INC  += ./internal/ceva_cdnn/cdnn/install_xm6/Include/ceva_link_share
+INC  += ./internal/ceva_cdnn/cdnn/install_xm6/Include/ceva_liblink
+INC  += ./internal/ceva_cdnn/cdnn/install_xm6/Include/ceva_liblink/ceva
+INC  += ./internal/ceva_cdnn/cdnn/Include
+ST_DEP := ceva_cdnn vdisp common uvc hdmi disp vif vpe tem fb warp sd mess
+LIBS += -lCDNNComponent -lCDNNAppUtility -lcevaamf -lcevalink  -lstdc++
+LIBS += -lmi_warp -lmi_vif -lmi_vpe -lmi_venc -lmi_disp -lmi_vdisp -lmi_divp -lmi_hdmi -lmi_uac -lAEC_LINUX -lmi_sd -lmi_ive -ladda
+LIBS += -L./internal/ceva_cdnn/cdnn/lib

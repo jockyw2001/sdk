@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/panel/hal/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/panel/hal/lib.a; arm-linux-gnueabihf-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/panel/hal/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/panel/hal/pnl/src/hal/hal_pnl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/panel/hal/pnl/src/hal/hal_pnl_lpll_tbl.o

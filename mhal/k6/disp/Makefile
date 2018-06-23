@@ -1,0 +1,1 @@
+/home/jinfeng.long/i2_sdk_project/sdk/mhal/kbuild.mk

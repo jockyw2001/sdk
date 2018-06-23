@@ -1,0 +1,4 @@
+config MS_CMDQ
+	tristate "CMDQ driver"
+	default n
+	help

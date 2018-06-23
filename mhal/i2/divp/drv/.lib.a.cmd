@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/divp/drv/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/divp/drv/lib.a; arm-linux-gnueabihf-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/divp/drv/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/divp/drv/src/divp_proc.o /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/i2/divp/drv/src/mdrv_divp.o

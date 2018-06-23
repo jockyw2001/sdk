@@ -1,0 +1,8 @@
+config DRV_CILINK
+
+tristate "CILINK"
+default n
+
+---help---
+Enable compilation option for driver CILINK
+

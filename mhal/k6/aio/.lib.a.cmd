@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/lib.a; arm-none-linux-gnueabi-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/aio/src/mhal_audio.o

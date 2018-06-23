@@ -1,0 +1,21 @@
+config DRV_AKL
+
+tristate "AKL"
+default n
+
+---help---
+Enable compilation option for driver AKL
+
+if DRV_AKL
+config AKL_UTOPIA_20_ENABLE
+	bool "Enable AKL 20"
+	default y
+	help
+	  Select if you want to enable AKL Utopia 2_0. If unsure say 'Y'.
+
+config AKL_NO_PRINTF_ENABLE
+	bool "Enable No Print Message"
+	default n
+	help
+	  Select if you want to remove printf message. If unsure, say 'N'.
+endif

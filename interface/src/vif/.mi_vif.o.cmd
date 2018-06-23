@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vif/mi_vif.o := arm-linux-gnueabihf-ld -EL    -r -o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vif/mi_vif.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vif/vif_api.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vif/vif_ioctl.o /home/wenshuai.xi/SI/i2_alkaid/sdk/interface/src/vif/../../../impl/vif/mi_vif_impl.o 

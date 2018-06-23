@@ -1,0 +1,1 @@
+cmd_/home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/divp/lib.a := rm -f /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/divp/lib.a; arm-none-linux-gnueabi-ar rcsD /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/divp/lib.a /home/wenshuai.xi/SI/i2_alkaid/sdk/mhal/k6/divp/src/mhal_divp.o
